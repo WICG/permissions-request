@@ -1,0 +1,18 @@
+<pre class='metadata'>
+Title: Requesting Permissions
+Shortname: permission-request
+Level: 1
+Status: CG-DRAFT
+Group: WICG
+Repository: jyasskin/permission-request
+URL: https://jyasskin.github.io/permission-request
+Editor: Jeffrey Yasskin, w3cid 72192, Google Inc. https://google.com/
+!Tests: <a href=https://github.com/w3c/web-platform-tests/tree/master/permission-request>web-platform-tests permission-request/</a> (<a href=https://github.com/w3c/web-platform-tests/labels/permission-request>ongoing work</a>)
+
+Abstract: This specification extends the Permissions API to provide a uniform functions for requesting permission to use powerful features.
+</pre>
+
+Introduction {#intro}
+=====================
+
+
