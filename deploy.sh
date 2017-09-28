@@ -16,7 +16,7 @@ CLONED_TARGET_BRANCH=$(mktemp -d)
 git clone --depth 1 --branch $TARGET_BRANCH $REPO $CLONED_TARGET_BRANCH
 
 # Copy over the out/ directory, removing any old contents.
-rsync -r --exclude .git --delete out $CLONED_TARGET_BRANCH
+rsync -r --exclude .git --delete out/ $CLONED_TARGET_BRANCH
 
 # Install the deploy key.
 chmod 600 deploy_key
