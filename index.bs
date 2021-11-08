@@ -8,6 +8,7 @@ Repository: jyasskin/permissions-request
 URL: https://jyasskin.github.io/permissions-request
 Editor: Jeffrey Yasskin, w3cid 72192, Google Inc. https://google.com/
 !Tests: <a href=https://github.com/w3c/web-platform-tests/tree/master/permissions-request>web-platform-tests permissions-request/</a> (<a href=https://github.com/w3c/web-platform-tests/labels/permissions-request>ongoing work</a>)
+!Polyfills: <a href="https://github.com/chromium/permissions.request">chromium/permissions.request</a>
 
 Abstract: This specification extends the Permissions API to provide a uniform function for requesting permission to use powerful features.
 </pre>
