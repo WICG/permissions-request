@@ -74,7 +74,7 @@ algorithm</dfn>:
 
 : Input
 ::  * An instance of the [=permission descriptor type=]
-    * A newly-created instance of the <a>permission result type</a>. 
+    * A newly-created instance of the <a>permission result type</a>.
 : Behavior
 :: Uses the algorithms in <a
     href="https://w3c.github.io/permissions/#requesting-more-permission">Requesting
@@ -88,28 +88,28 @@ algorithm</dfn>:
 : Example callers
 ::  * <code>{{Permissions}}.{{Permissions/request(permissionDesc)}}</code>
 : Default
-:: If unspecified, this defaults to the [=boolean permission request
+:: If unspecified, this defaults to the [=default permission request
     algorithm=].
 
-## Default request algorithm ## {#boolean-request-algorithm}
+## Default request algorithm ## {#default-request-algorithm}
 
-The <dfn export>boolean permission request algorithm</dfn>, given a
+The <dfn export>default permission request algorithm</dfn>, given a
 {{PermissionDescriptor}} <var>permissionDesc</var> and a {{PermissionStatus}}
 |status|, runs the following steps:
 
 <ol class="algorithm">
-1. Run the <a>boolean permission query algorithm</a> on |permissionDesc| and
+1. Run the [=default permission query algorithm=] on |permissionDesc| and
     |status|.
 1. If <code>|status|.state</code> is not {{"prompt"}}, abort these steps.
 1. [=Request permission to use=] |permissionDesc|.
-1. Run the <a>boolean permission query algorithm</a> again on |permissionDesc|
+1. Run the [=default permission query algorithm=] again on |permissionDesc|
     and |status|.
 
     <p class="issue" id="issue-non-persistent-grants">
       On browsers that don't store permissions persistently within an
       <a>environment settings object</a>, this will always return {{"prompt"}},
       but still show the user an unnecessary prompt. That may mean that no
-      permissions should use the <a>boolean permission request algorithm</a>,
+      permissions should use the <a>default permission request algorithm</a>,
       since it can never return an appropriate object-capability.
     </p>
 
