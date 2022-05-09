@@ -6,7 +6,8 @@ Status: CG-DRAFT
 Group: WICG
 Repository: jyasskin/permissions-request
 URL: https://jyasskin.github.io/permissions-request
-Editor: Jeffrey Yasskin, w3cid 72192, Google Inc. https://google.com/
+Editor: Balazs Engedy, w3cid 113009, Google Inc. https://google.com/, engedy@google.com
+Former Editor: Jeffrey Yasskin, w3cid 72192, Google Inc. https://google.com/, jyasskin@google.com
 !Tests: <a href=https://github.com/w3c/web-platform-tests/tree/master/permissions-request>web-platform-tests permissions-request/</a> (<a href=https://github.com/w3c/web-platform-tests/labels/permissions-request>ongoing work</a>)
 !Polyfills: <a href="https://github.com/chromium/permissions.request">chromium/permissions.request</a>
 
